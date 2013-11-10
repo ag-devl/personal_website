@@ -36,7 +36,8 @@ li:hover{
     background-image: radial-gradient(circle, #656464, #3e3d3d);
     background-size: cover;
     border-bottom: 3px inset #808080;
-    
+    overflow: hidden;
+    height: 580px;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
 }
@@ -87,7 +88,7 @@ a:visited{
 
 #aboutMeDiv{
     width: 100%;
-    
+    overflow: hidden;
     max-height: 100%;
     -webkit-column-count: 2;
     -webkit-columns: 50%;
