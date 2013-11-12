@@ -14,12 +14,15 @@ $(document).ready(function () {
 
     });
     $("#resume").click(function () {
-        
+
         $("#home_content").empty();
         $("#home_content").html("<iframe src=\"Agastya_Mahi_Resume _11-03.pdf\" type=\"application/pdf\" style=\"width:100%;height:100%;\"></iframe>");
-        $("#home_content").css({ "background-color": "#3e3d3d", "max-width": "100%", "height": "100%", "padding": "0 0 0 0 " });
+        
     });
 
-   
+    $("#contactme").click(function () {
+        $("#home_content").empty();
+        $("#home_content").html();
+    })
 
 })
