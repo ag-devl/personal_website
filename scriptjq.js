@@ -2,7 +2,12 @@ $(document).ready(function () {
 
     $("#home").click(function () {
         $("#home_content").empty();
-        $("#home_content").append("<div id='my_name'> <div class='first_name'> AGASTYA</div> <div class=\"last_name\"> MAHI</div></div><div id=\"philosophy\">\"Unless you try to do something beyond what you have already mastered, you will never grow.\"<div id=\"rwe\">- Ralph Waldo Emerson</div></div>");
+        $("#home_content").load("bng.html #home_content");
+        $("#home").css({"border-bottom-color":"#159abf", "border-bottom-style":"groove"});
+        $("#aboutme").css({"border-bottom-color":"#none", "border-bottom-style":"none"});
+        $("#resume").css({"border-bottom-color":"#none", "border-bottom-style":"none"});
+        $("#blog").css({"border-bottom-color":"none", "border-bottom-style":"none"});
+        $("#contactme").css({"border-bottom-color":"none", "border-bottom-style":"none"});
 
     });
 
@@ -10,19 +15,44 @@ $(document).ready(function () {
     $("#aboutme").click(function () {
 
         $("#home_content").empty();
-        $("#home_content").html("<div id ='aboutMeDiv'><p>Hi! I am Agastya, a current Computer Science  student<br>at Missouri S&T with interest in mobile platfom <br>and big data.I like to be engaged in constructive <br> conversations and keep myself updated with latest <br>technology.Other than my career, I enjoy reading books,<br>  blogs and I actively involve in outdoor activities.</p><img id ='myImage'src='Images/agweb2.jpg'></div>");
+        $("#home_content").load("aboutme.html");
+        $("#aboutme").css({"border-bottom-color":"#159abf", "border-bottom-style":"groove"});
+        $("#home").css({"border-bottom-color":"#none", "border-bottom-style":"none"});
+        $("#resume").css({"border-bottom-color":"#none", "border-bottom-style":"none"});
+        $("#blog").css({"border-bottom-color":"none", "border-bottom-style":"none"});
+        $("#contactme").css({"border-bottom-color":"none", "border-bottom-style":"none"});
 
     });
     $("#resume").click(function () {
 
         $("#home_content").empty();
         $("#home_content").html("<iframe src=\"Agastya_Mahi_Resume _11-03.pdf\" type=\"application/pdf\" style=\"width:100%;height:100%;\"></iframe>");
-        
+        $("#resume").css({"border-bottom-color":"#159abf", "border-bottom-style":"groove"});
+        $("#aboutme").css({"border-bottom-color":"#none", "border-bottom-style":"none"});
+        $("#home").css({"border-bottom-color":"#none", "border-bottom-style":"none"});
+        $("#blog").css({"border-bottom-color":"none", "border-bottom-style":"none"});
+        $("#contactme").css({"border-bottom-color":"none", "border-bottom-style":"none"});
+
     });
 
     $("#contactme").click(function () {
         $("#home_content").empty();
-        $("#home_content").html();
-    })
+        $("#home_content").load("contactme.html");
+        $("#contactme").css({"border-bottom-color":"#159abf", "border-bottom-style":"groove"});
+        $("#aboutme").css({"border-bottom-color":"#none", "border-bottom-style":"none"});
+        $("#resume").css({"border-bottom-color":"#none", "border-bottom-style":"none"});
+        $("#blog").css({"border-bottom-color":"none", "border-bottom-style":"none"});
+        $("#home").css({"border-bottom-color":"none", "border-bottom-style":"none"});
+    });
+
+    $("#blog").click(function () {
+        $("#home_content").empty();
+        $("#home_content").load("blog.html");
+        $("#blog").css({"border-bottom-color":"#159abf", "border-bottom-style":"groove"});
+        $("#aboutme").css({"border-bottom-color":"#none", "border-bottom-style":"none"});
+        $("#resume").css({"border-bottom-color":"#none", "border-bottom-style":"none"});
+        $("#home").css({"border-bottom-color":"none", "border-bottom-style":"none"});
+        $("#contactme").css({"border-bottom-color":"none", "border-bottom-style":"none"});
+    });
 
 })
